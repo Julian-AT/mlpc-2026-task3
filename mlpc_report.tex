@@ -34,16 +34,18 @@
 
 \author{%
   Team A-C (Qualitative) \AND
-  Author Name 1
+  Julian Schmidt
   \And
-  Author Name 2
+  Paul Breburda
 }
 
 \begin{document}
 
 \maketitle
 
-The MLPC 2026 dataset supports sound event detection (SED) for smart home environments. It comprises 3{,}656 crowd-sourced recordings (168{,}239 one-second segments) annotated for 15 domestic classes by multiple annotators per file, paired with 47 precomputed audio features in 14 groups. This report verifies annotation quality, quantifies inter-annotator agreement, defines a label aggregation, characterizes the resulting label space, summarizes the features, and identifies biases that will shape the modeling phase.
+The MLPC 2026 dataset supports sound event detection (SED) for smart home environments. It comprises 3{,}656 crowd-sourced recordings (168{,}239 one-second segments) annotated for 15 domestic classes by multiple annotators per file, paired with 47 precomputed audio features in 14 groups. This report verifies annotation quality, quantifies inter-annotator agreement, defines a label aggregation, characterizes the resulting label space, summarizes the features, and identifies biases that will shape the modeling phase. 
+
+An interactive and explorable slide deck can be found at \url{http://mlpc.julianschmidt.cv/}
 
 \needspace{6\baselineskip}
 \section{Verify Annotations and Qualitative Analysis}
@@ -198,7 +200,7 @@ We apply t-SNE to 10{,}000 high-agreement single-class segments using the 47-dim
 
 \subsection{Dataset Biases}
 
-Our analysis identifies four biases that any downstream training pipeline must account for. The first is a hardware bias: although 369 distinct recording devices appear in the corpus, Apple iPhones dominate the long tail, leaving Android phones, tablets, and laptops sparsely represented. Models trained on this distribution are likely to generalize poorly to the noise floors and microphone responses of unseen hardware. The second is an environmental bias: kitchens account for 26.3\% of recordings, mechanically over-representing kitchen-associated classes such as \texttt{running\_water} and \texttt{cutlery\_dishes} while leaving bathrooms, hallways, and offices in the long tail. The third is an annotator bias: own-recording pairs achieve a 0.020 IoU advantage over external pairs ($p = 0.002$), small but statistically significant, indicating that collector familiarity systematically shifts labels and that any evaluation mixing own and external annotations will conflate scene knowledge with model accuracy. The fourth is a class-frequency imbalance: the 24:1 ratio between the most and least frequent classes will pull standard classifiers toward the majority classes unless resampling or loss reweighting is applied.
+Our analysis identifies four biases that any downstream training pipeline must account for. The first is a hardware bias: although 369 distinct recording devices appear in the corpus, Apple iPhones dominate the long tail, leaving Android phones, tablets, and laptops sparsely represented. Models trained on this distribution are likely to generalize poorly to the noise floors and microphone responses of unseen hardware. The second is an environmental bias: kitchens account for 26.3\% of recordings, mechanically over-representing kitchen-associated classes such as \texttt{running\_water} and \texttt{cutlery\_dishes} while leaving bathrooms, hallways, and offices in the long tail. The third is an annotator bias: own-recording pairs achieve a 0.020 IoU advantage over external pairs ($p = 0.002$), small but statistically significant, indicating that collector familiarity systematically shifts labels and that any evaluation mixing annotations will conflate scene knowledge with model accuracy. The 24:1 ratio between the most and least frequent classes will pull standard classifiers toward the majority classes unless resampling or loss reweighting is applied.
 
 \subsection{Dataset Suitability}
 
@@ -206,11 +208,16 @@ The dataset is broadly suitable for training sound event detectors: it provides 
 
 \subsection{Broader Impact}
 
-SED enables beneficial applications including assistive systems for hearing-impaired users, elderly care monitoring (fall detection, medication reminders), and energy-efficient smart home automation. The same technology poses meaningful privacy risks: continuous domestic audio monitoring could enable surveillance, and acoustic fingerprinting may identify individuals or activities without their consent. The dataset's domestic focus amplifies these concerns since the recorded environments are intimate spaces. Mitigations include on-device processing so raw audio never leaves the home, informed-consent protocols for all deployed systems, restricting model outputs to a fixed set of predefined event categories rather than open-ended audio analysis, and publishing only aggregated features rather than the source waveforms whenever possible.
+This enables applications including assistive systems for hearing-impaired users, elderly care monitoring (fall detection, medication reminders), and energy-efficient smart home automation. The technology can pose meaningful privacy risks: domestic audio monitoring could enable surveillance, and acoustic fingerprinting may identify individuals or activities without their consent. The dataset's domestic focus amplifies these concerns since the recorded environments are intimate spaces. Mitigations include on-device processing so raw audio never leaves the home, informed-consent protocols for all deployed systems, restricting model outputs to predefined event categories rather than open-ended audio analysis, and publishing only aggregated features rather than the source waveforms whenever possible.
 
 \needspace{4\baselineskip}
 \section{Disclosure of LLM and AI Tool Use}
 
-We used Claude Opus 4.6 (fast mode) and Cursor Composer 2 (fast mode) for data analysis, code generation supporting the statistical computations, and editorial refinement of written sections. All quantitative claims were verified by re-running the underlying scripts and cross-checking outputs against the raw data. Figures were produced programmatically from the same scripts and inspected for consistency with the reported summary statistics.
+We used Claude Opus 4.6 1M Context for Planning, Opus 4.6 (fast) and Cursor Composer 2 (fast) for data analysis, code generation supporting the statistical computations, and editorial refinement of written sections. All quantitative claims were verified by re-running the underlying scripts and cross-checking outputs against the raw data. Figures were produced programmatically from the same scripts and inspected for consistency with the reported summary statistics.
 
+This project consumed approximately 13~million tokens of Claude Opus~4.6 across analysis, writing, and the
+interactive slide deck. The full codebase, including the LaTeX sources, Python
+analysis scripts, and the Next.js presentation app, is available at
+\url{https://github.com/julian-at/mlpc-2026-task3}.
+  
 \end{document}
