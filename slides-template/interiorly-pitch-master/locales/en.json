@@ -1,0 +1,104 @@
+{
+  "slide_start": {
+    "title": "Pitch Interiorly/2024",
+    "select_menu": {
+      "main": "Main Version"
+    },
+    "subtitle": "Interior Design Concepts Powered by Artificial Intelligence"
+  },
+  "slide_problem": {
+    "title": "Current Challenge",
+    "problems": {
+      "problem_1": {
+        "title": "Complexity",
+        "text": "Designing living spaces is complex and requires understanding of both aesthetic and functional requirements."
+      },
+      "problem_2": {
+        "title": "Creativity",
+        "text": "Interior design can be overwhelming due to its complexity and the multitude of decisions and options available."
+      },
+      "problem_3": {
+        "title": "Cost",
+        "text": "High costs deter many from redesigning their living spaces. Most people don't have the budget to hire an interior designer."
+      }
+    },
+    "summary": "The market lacks user-oriented\ndesign tools."
+  },
+  "slide_solution": {
+    "title": "Our Solution",
+    "header": "Affordable, Creative, Functional",
+    "subtitle": "Breathtaking Interior Concepts Through AI in Seconds",
+    "cta": "What Are You Waiting For?"
+  },
+  "slide_features": {
+    "title": "Key Features",
+    "features": {
+      "feature_1": {
+        "title": "Image Generation",
+        "subtitle": "Text-based image generation powered by SDXL."
+      },
+      "feature_2": {
+        "title": "Shared Workspace",
+        "subtitle": "Collaborative workspace as a central hub for teamwork."
+      },
+      "feature_3": {
+        "title": "Real-time Collaboration",
+        "subtitle": "Joint editing of files in real-time."
+      },
+      "feature_4": {
+        "title": "Semantic Search",
+        "subtitle": "Semantic search across all files and content."
+      }
+    }
+  },
+  "generative_ui": {
+    "title": "Generative UI & Chat Interactions",
+    "keyframes": {
+      "keyframe_1": "Hello, I'm Interiorly AI! How can I assist you today? 🏡✨",
+      "keyframe_2": "Can you design a Scandinavian-style living room with natural light and minimalist furniture?",
+      "keyframe_3": "Absolutely! 🌿✨ I'll create a serene Scandinavian living room for you, bathed in natural light and adorned with minimalist furniture.",
+      "keyframe_4": "generateImage(\"Scandinavian living room with..\")",
+      "keyframe_5": "Your serene Scandinavian living room 🌿☀️, flooded with natural light and decorated with minimalist furniture is ready. 🛋️",
+      "keyframe_6": "😍 Wow, that looks amazing! How about a luxurious bathroom with a freestanding bathtub?",
+      "keyframe_7": "I'm glad you like it! 🛁💫 Creating a luxurious bathroom with a freestanding bathtub is right up my alley. Let's make it happen!",
+      "keyframe_8": "generateImage(\"Luxurious bathroom with freestanding bathtub\")",
+      "keyframe_9": "Your luxurious bathroom featuring a stunning freestanding bathtub is ready for your review. Shall we take a look? 🛁✨💖"
+    }
+  },
+  "slide_vision": {
+    "title": "Our Vision",
+    "vision": "Our goal is to become the leading destination for interior design solutions for both businesses and individuals."
+  },
+  "slide_team": {
+    "title": "Who Are We?",
+    "team_members": {
+      "team_member_1": {
+        "name": "Julian Schmidt",
+        "role": "Fullstack Development & AI",
+        "text": "Full-stack developer. Responsible for implementing AI technologies and developing user-centric applications"
+      },
+      "team_member_2": {
+        "name": "Anthony Owah",
+        "role": "Backend Development & PM",
+        "text": "Project manager and (backend) developer. Responsible for API development and development team coordination."
+      }
+    }
+  },
+  "slide_finish": {
+    "title": "Demo",
+    "placeholder": "Imagine your dream apartment...",
+    "words": {
+      "prefix": "Generate",
+      "word_1": "breathtaking",
+      "word_2": "unique",
+      "word_3": "beautiful",
+      "word_4": "elegant",
+      "word_5": "innovative",
+      "suffix": "Interior Design Concepts with Interiorly AI."
+    },
+    "tooltips": {
+      "not_sure": "Not Sure?",
+      "cta": "Generate a random concept"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "slide_start": {
+    "title": "Pitch Interiorly/2024",
+    "select_menu": {
+      "main": "Hauptversion"
+    },
+    "subtitle": "Innenarchitekturkonzepte durch künstliche Intelligenz"
+  },
+  "slide_problem": {
+    "title": "Aktuelles Problem",
+    "problems": {
+      "problem_1": {
+        "title": "Komplexität",
+        "text": "Die Gestaltung von Wohnräumen ist komplex und erfordert Verständnis für ästhetische und funktionale Anforderungen."
+      },
+      "problem_2": {
+        "title": "Kreativität",
+        "text": "Innenarchitektur kann überwältigend sein wegen ihrer Komplexität und der Vielzahl an Entscheidungen und Optionen."
+      },
+      "problem_3": {
+        "title": "Kosten",
+        "text": "Hohe Kosten schrecken viele von einer Wohnraumumgestaltung ab. Die meisten Menschen haben nicht das Budget, um einen Innenarchitekten zu engagieren."
+      }
+    },
+    "summary": "Der Markt bietet keine benutzer-\norientierten Werkzeuge."
+  },
+  "slide_solution": {
+    "title": "Unsere Lösung",
+    "header": "Erschwinglich, Kreativ, Funktional",
+    "subtitle": "Atemberaubende Innenraumkonzepte mittels KI in Sekunden",
+    "cta": "Worauf warten Sie noch?"
+  },
+  "slide_features": {
+    "title": "Hauptfunktionen",
+    "features": {
+      "feature_1": {
+        "title": "Bildgenerierung",
+        "subtitle": "Textbasierte Bildgenerierung durch SDXL."
+      },
+      "feature_2": {
+        "title": "Gemeinsamer Workspace",
+        "subtitle": "Gemeinsamer Workspace als zentraler Ort für die Zusammenarbeit."
+      },
+      "feature_3": {
+        "title": "Echtzeit-Kollaboration",
+        "subtitle": "Gemeinsames bearbeiten von Datein in Echtzeit."
+      },
+      "feature_4": {
+        "title": "Semantische Suche",
+        "subtitle": "Semantische Suche über alle Datein und Inhalte."
+      }
+    }
+  },
+  "generative_ui": {
+    "title": "Generatives UI & Chat Interaktionen",
+    "keyframes": {
+      "keyframe_1": "Hallo, ich bin Interiorly AI! Wie kann ich dir heute helfen? 🏡✨",
+      "keyframe_2": "Kannst du ein Wohnzimmer im skandinavischen Stil mit natürlichem Licht und minimalistischen Möbeln entwerfen?",
+      "keyframe_3": "Aber sicher! 🌿✨ Ich werde ein ruhiges Wohnzimmer im skandinavischen Stil für Sie gestalten, das in natürlichem Licht badet und mit minimalistischen Möbeln geschmückt ist.",
+      "keyframe_4": "generateImage(\"skandinavisches Wohnzimmer mit..\")",
+      "keyframe_5": "Ihr ruhiges Wohnzimmer im skandinavischen Stil 🌿☀️, durchflutet von natürlichem Licht und geschmückt mit minimalistischen Möbeln ist fertig. 🛋️",
+      "keyframe_6": "😍 Wow, sieht toll aus! Wie wäre es mit einem luxuriösen Badezimmer mit freistehender Badewanne?",
+      "keyframe_7": "Ich freue mich, dass es dir gefällt. 🛁💫 Ein luxuriöses Badezimmer mit freistehender Badewanne zu gestalten liegt genau in meinem Fachgebiet. Lassen Sie uns das umsetzen!",
+      "keyframe_8": "generateImage(\"Luxuriöses Badezimmer mit freistehender Badewanne\")",
+      "keyframe_9": "Ihr luxuriöses Badezimmer mit einer atemberaubenden freistehenden Badewanne, steht zur Bewunderung bereit. Sollen wir einen Blick darauf werfen? 🛁✨💖"
+    }
+  },
+  "slide_vision": {
+    "title": "Unsere Vision",
+    "vision": "Unser Ziel ist es, führende Anlaufstelle für Innenarchitektur-Design sowohl für Unternehmen als auch Einzelpersonen zu werden."
+  },
+  "slide_team": {
+    "title": "Wer sind wir?",
+    "team_members": {
+      "team_member_1": {
+        "name": "Julian Schmidt",
+        "role": "Fullstack-Entwicklung & KI",
+        "text": "Full-Stack-Entwickler. Zuständig für die Implementierung von KI-Technologien und die Entwicklung von benutzerzentrierten Anwendungen"
+      },
+      "team_member_2": {
+        "name": "Anthony Owah",
+        "role": "Backend-Entwicklung & PM",
+        "text": "Projektmanager und (Backend-)Entwickler. Verantwortlich für die Entwicklung von APIs und die Koordination des Entwicklerteams."
+      }
+    }
+  },
+  "slide_finish": {
+    "title": "Demo",
+    "placeholder": "Stell dir deine Traumwohnung vor...",
+    "words": {
+      "prefix": "Generiere",
+      "word_1": "atemberaubende",
+      "word_2": "einzigartige",
+      "word_3": "wunderschöne",
+      "word_4": "elegante",
+      "word_5": "innovative",
+      "suffix": "Innenraumkonzepte mit Interiorly AI."
+    },
+    "tooltips": {
+      "not_sure": "Nicht Sicher?",
+      "cta": "Generiere ein zufälliges Konzept"
+    }
+  }
+}
