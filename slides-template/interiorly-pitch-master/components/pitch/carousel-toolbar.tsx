@@ -40,7 +40,7 @@ export function CarouselToolbar({ api }: CarouselToolbarProps) {
           <div className="flex items-center gap-1.5 text-muted-foreground">
             <Logo className="h-6 w-6 text-muted-foreground" />
             <span className="relative mr-1.5 flex gap-1 text-nowrap text-sm">
-              Interiorly AI Pitch
+              MLPC 2026 · Task 3
             </span>
             <Separator orientation="vertical" className="hidden h-6 md:block" />
           </div>

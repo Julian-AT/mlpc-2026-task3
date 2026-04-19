@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
-  keywords: ["Interiorly", "Interiorly AI", "Interior Design", "AI", "Pitch"],
+  keywords: ["MLPC", "2026", "sound event detection", "SED", "annotations", "audio features"],
   authors: [
     {
       name: "Julian Schmidt",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       url: "https://github.com/An-thonny",
     },
   ],
-  creator: "Julian Schmidt & Anthony Owah",
+  creator: "Julian Schmidt",
   openGraph: {
     type: "website",
     locale: "en_US",

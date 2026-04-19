@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/carousel";
 import { Slides } from "@/components/pitch/slides";
 import { CarouselToolbar } from "@/components/pitch/carousel-toolbar";
-import { usePathname } from "next/navigation";
 import { useCurrentSlide } from "@/lib/hooks/use-current-slide";
 
 interface PitchCarouselProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -29,8 +28,6 @@ CarouselSlide.displayName = "CarouselSlide";
 const PitchCarousel = ({ slides }: PitchCarouselProps) => {
   const [api, setApi] = useState<CarouselApi>();
   const { currentSlide, setCurrentSlide } = useCurrentSlide();
-  const pathname = usePathname();
-
   useEffect(() => {
     if (!api) return;
 
@@ -58,7 +55,6 @@ const PitchCarousel = ({ slides }: PitchCarouselProps) => {
         ))}
       </CarouselContent>
       <CarouselToolbar api={api} />
-      {pathname}
     </Carousel>
   );
 };

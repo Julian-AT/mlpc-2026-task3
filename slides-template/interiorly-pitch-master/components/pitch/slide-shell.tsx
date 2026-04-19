@@ -23,7 +23,7 @@ const SlideShell = ({ title, className, children }: SlideShellProps) => {
             "container relative grid h-[650px] max-h-[650px] grid-cols-1 items-center justify-center gap-8 xl:grid-cols-3",
             className,
           )}
-          id={title.toLowerCase().replace(" ", "-")}
+          id={title.toLowerCase().replaceAll(" ", "-")}
         >
           {children}
         </div>

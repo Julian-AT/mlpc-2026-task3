@@ -2,6 +2,7 @@
 
 import { useCallback } from "react";
 import { parseAsInteger, useQueryState } from "nuqs";
+import { MLPC_SLIDE_COUNT } from "@/components/deck/outline";
 
 export function useCurrentSlide() {
   const [currentSlide, _setCurrentSlide] = useQueryState(
@@ -13,7 +14,7 @@ export function useCurrentSlide() {
     (slideNumber: number) => {
       if (slideNumber === currentSlide) return;
       if (slideNumber < 1) slideNumber = 1;
-      if (slideNumber > 9) slideNumber = 9;
+      if (slideNumber > MLPC_SLIDE_COUNT) slideNumber = MLPC_SLIDE_COUNT;
 
       _setCurrentSlide(slideNumber);
     },

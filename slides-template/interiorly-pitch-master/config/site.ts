@@ -1,10 +1,11 @@
 export const siteConfig = {
-  name: "Interiorly AI",
-  url: "https://www.interiorly.dev/",
-  ogImage: "https://www.interiorly.dev/images/og.png",
-  description: "Interior design concepts through artificial intelligence",
+  name: "MLPC 2026 Task 3",
+  url: "https://mlpc.julianschmidt.cv/",
+  ogImage: "https://mlpc.julianschmidt.cv/images/og.png",
+  description:
+    "Interactive slide deck — MLPC 2026 Task 3 data exploration (SED, annotations, features).",
   links: {
-    github: "https://github.com/julian-at/interiorly-pitch",
+    github: "https://github.com/julian-at/mlpc-2026-task3",
   },
 };
 
